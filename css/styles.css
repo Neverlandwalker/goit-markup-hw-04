@@ -45,6 +45,7 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color:var(--primary-text-color) ;
+    cursor: pointer;
 }
 body,
 h1,
@@ -59,6 +60,7 @@ ol{
 }
 .header-outline{
     width: 1230px;
+    height: 80px;
 }
 .container{
     width: 1200px;
@@ -67,6 +69,8 @@ ol{
     padding: 0px 15px 0px 15px;
 }
 .logo {
+    height: 80px;
+    padding-top: 24px;
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -94,22 +98,31 @@ img{
 }
 /* Header and etc. */
 .header-division{
+    height: 80px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .container-header{
+    height: 80px;
     align-items: center;
     display: flex;
 }
 .nav-list{
+    height: 80px;
     display: flex;
+    align-content: center;
+    justify-content: center;
     margin-left: 93px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
     
 }
 
 .site-nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -123,7 +136,7 @@ img{
     margin-left: 50px;
 }
 .site-nav:hover,
-.site-nav:focus
+.site-nav:focus,
 .site-nav:active{
     color: var(--logo-span-color);
     cursor: pointer;
@@ -134,14 +147,15 @@ img{
 .auth-list{
     display:  flex;
     margin-left: 305px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
 }
 .auth-nav{   
     display: flex;
     align-items: center;
     display: flex;
     width: 161px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -165,15 +179,24 @@ align-items: baseline;
 }
 /* Hero */
 .hero{
+    display: flex;
     background: var(--hero-background-color);
     align-content: center;
     align-items: center;
+    width: 1600px;
+    margin: 0 auto;
     
+}
+.hero-text{
+    width: 696px;
+    margin: 0 auto;
 }
 
 
 .overlay{
-    max-width: 1600px;
+    display: inline-block;
+    align-items: center;
+    width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -364,6 +387,7 @@ border-radius: 0px 0px 4px 4px;
 .team-text{
     font-weight: 400;
     font-size: 16px;
+    margin-bottom: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
@@ -371,9 +395,8 @@ border-radius: 0px 0px 4px 4px;
 }
 .team-links-list{
     display: flex;
-    margin-top: 16px;
-    margin-left: 32px;
-    margin-right: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
     justify-content: space-between;
 }
 .team-link{
@@ -388,7 +411,7 @@ border-radius: 0px 0px 4px 4px;
 .social-team-svg{
     width: 22px;
     height: 22px;
-    fill: var(--contact-links-color);
+    fill: var(--clients-colour);
 }
 .team-link:hover .social-team-svg,
 .team-link:focus .social-team-svg{
@@ -518,6 +541,7 @@ font-style: normal;
 font-weight: 700;
 font-size: 14px;
 line-height: 16px;
+margin-bottom: 20px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--hero-text-color);
@@ -526,7 +550,7 @@ color: var(--hero-text-color);
     display: flex;
 }
 .follow-block-element{
-    margin-top: 20px;
+    
     
 }
 .follow-block-element:not(:first-child){
@@ -562,10 +586,7 @@ color: var(--hero-text-color);
     border: 1px solid #ECECEC;
     
 }
-.filler-division{
-    padding-top: calc(94px - 35.9px);
-    padding-bottom: 50px;
-}
+
 .filler-list {
     display: flex;
     justify-content: center;
@@ -578,13 +599,14 @@ color: var(--hero-text-color);
 .filler-buttons{
     border: none;
     font-size: 16px;
+    padding: 6px 22px;
     line-height: 1.62;
-    text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     background-color: var(--portfolio-buttons-background-color);
-    
+    cursor: inherit;
 }
+
 
 .filler-buttons:hover,
 .filler-buttons:focus{
