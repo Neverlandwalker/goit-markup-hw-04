@@ -71,6 +71,7 @@ ol{
 .logo {
     height: 80px;
     padding-top: 24px;
+    padding-bottom: 25px;
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -98,10 +99,9 @@ img{
 }
 /* Header and etc. */
 .header-division{
-    height: 80px;
+    
     display: flex;
-    align-items: center;
-    justify-content: center;
+    
 }
 .container-header{
     height: 80px;
@@ -146,7 +146,7 @@ img{
 }
 .auth-list{
     display:  flex;
-    margin-left: 305px;
+    margin-left: auto;
     
 }
 .auth-nav{   
@@ -164,14 +164,13 @@ img{
 }
 .auth-nav-element:first-child{
     display: flex;
-margin-right: 30px;
-align-items: baseline;
+    margin-right: 30px;
+    align-items: baseline;
 }
 .auth-nav:hover,
 .auth-nav:focus{ 
     fill: var(--logo-span-color);
     color: var(--logo-span-color);
-    cursor: pointer;
 }
 .header-icons{
     margin-right: 10px;
@@ -372,6 +371,8 @@ border-radius: 0px 0px 4px 4px;
 .team-list-border{
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 .team-list-elements:not(:first-child){
     margin-left: 30px;
@@ -395,8 +396,6 @@ border-radius: 0px 0px 4px 4px;
 }
 .team-links-list{
     display: flex;
-    padding-left: 32px;
-    padding-right: 32px;
     justify-content: space-between;
 }
 .team-link{
@@ -449,6 +448,7 @@ letter-spacing: 0.03em;
     justify-content: center;
     width: 170px;
     height: 92px;
+    outline: transparent;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     border-color: var(--clients-colour);
@@ -475,12 +475,12 @@ letter-spacing: 0.03em;
 
 /* Footer */
 .footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--footer-background-color);
     
 }
 .bottom{
-    padding-top: 60px;
-    padding-bottom: 60px;
     display: flex;
 }
 .logo-footer {
@@ -634,6 +634,7 @@ border-radius: 4px;
 }
 .projects-element:hover,
 .projects-element:focus{
+    outline: transparent;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .projects-box{
