@@ -482,6 +482,7 @@ letter-spacing: 0.03em;
 }
 .bottom{
     display: flex;
+    align-items: baseline;
 }
 .logo-footer {
     display: flex;
@@ -530,7 +531,6 @@ letter-spacing: 0.03em;
     color: var(--hero-text-color);
 }
 .follow-us{
-    padding-top: 12px;
     margin-left: 70px;
     
     
